@@ -1,11 +1,16 @@
 import React from "react";
 import Hero from "../globals/Hero";
-import aboutImg from "../../images/aboutBcg.jpeg";
+import homeImg from "../../images/homeBcg.jpeg";
+import Banner from "../globals/Banner";
 
 const Header = () => {
   return (
-    <Hero img={aboutImg}>
-      <h1>Hello world</h1>
+    <Hero img={homeImg}>
+      <Banner 
+        greeting="welcome to" 
+        title="Beach Resort" 
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora, fuga quos eius culpa esse." 
+      />
     </Hero>
   );
 };
