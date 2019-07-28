@@ -10,7 +10,7 @@ import {
   setLetterSpacing,
   media
 } from "../../styles";
-import { primaryBtn, PrimaryBtn } from "../globals/Buttons";
+import { PrimaryBtn } from "../globals/Buttons";
 
 const About = () => {
   return (
@@ -53,13 +53,19 @@ const AboutCenter = styled.div`
   }
   width: 90vw;
   margin: 0 auto;
-  ${media.desktop`
+  ${media.large`
+    .about-img {
+    padding: ${setRem(0)};
+    }
+    .about-info {
+      padding-left: ${setRem(30)};
+    }
     width: 100vw;
     max-width: 1170px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: ${setRem(32)};
-    .about-img{
+    .about-img, .about-info {
         align-self: center;
     }
     .about-info {
